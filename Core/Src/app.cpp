@@ -5,7 +5,8 @@
 #include <stdio.h>
 #include <ukaikokko/ukaikokko.h>
 
-ukaikokko::InterruptBufferedUART<256, 1024, 1024> pc(&huart2);
+ukaikokko::InterruptBufferedUART<64, 1024, 1024> pc(&huart2);
+ukaikokko::GPOutput led(DebugLED_GPIO_Port, DebugLED_Pin);
 
 static bool setupDone = false;
 
@@ -36,6 +37,14 @@ extern "C"
             {
                 const int16_t data = pc.read();
                 pc.write(static_cast<uint8_t>(data));
+            }
+            // if (pc.getError())
+            // {
+            //     led.write(1);
+            // }
+            if (pc.getSysRxOverflowCount())
+            {
+                led.write(1);
             }
             pre = now;
         }

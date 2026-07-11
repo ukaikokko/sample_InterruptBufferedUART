@@ -23,6 +23,10 @@
 Code Generator, Generated files\
 ✅Generate peripheral initialization as a pair of '.c/.h' files per peripheral
 
+### USART2
+#### NVIC Settings
+USART2 global interrupt ✅
+
 ## プログラム概要
 ### setup()
 Hello WorldとPCに送信

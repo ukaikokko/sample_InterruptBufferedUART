@@ -22,9 +22,8 @@ extern "C"
 
         if (now - pre >= 10)
         {
+            pre = now;
         }
-
-        pre = now;
     }
 
 #ifdef __cplusplus

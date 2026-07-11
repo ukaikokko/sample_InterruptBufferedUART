@@ -1,4 +1,4 @@
-# sample_BufferedInterruptUART
+# sample_InterruptBufferedUART
 ## 概要
 
 | 項目         | 仕様             |

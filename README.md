@@ -35,3 +35,8 @@ now = HAL_GetTick()
 #### 0.1秒ごとに
 現在の経過時間をPCに送信\
 ボタンが押されていた場合，LEDの点灯/消灯を切り替える
+
+## memo
+```
+This is a test no meaningful content.Please paste me to your serial monitor to check if the serial communication is working properly.Check that this message is printed correctly and that the characters are not garbled.SUCCESS!!Congratulations! You have successfully set up the serial communication using InterruptBufferedUART.I like curry and rice. I also like pizza and pasta. I enjoy programming and learning new things. I hope you enjoy using this library and find it useful for your projects.Thank you for using InterruptBufferedUART!
+```

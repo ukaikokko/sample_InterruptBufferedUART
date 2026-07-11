@@ -32,9 +32,7 @@ USART2 global interrupt ✅
 Hello WorldとPCに送信
 ### loop()
 now = HAL_GetTick()
-#### 0.1秒ごとに
-現在の経過時間をPCに送信\
-ボタンが押されていた場合，LEDの点灯/消灯を切り替える
+PCからの受信データをそのままPCに送信
 
 ## memo
 ```

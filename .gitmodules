@@ -1,0 +1,3 @@
+[submodule "Core/Inc/ukaikokko"]
+	path = Core/Inc/ukaikokko
+	url = https://github.com/ukaikokko/ukaikokko.git

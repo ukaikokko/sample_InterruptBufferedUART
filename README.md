@@ -1,9 +1,5 @@
-# NUCLEO_F446RE_CubeIDE_template
+# sample_BufferedInterruptUART
 ## 概要
-NUCLEO_F446REのCubeIDEのテンプレートプロジェクトです．\
-GitHubのテンプレート機能を使って，新しいプロジェクトを作成した後，Scripts内のrenameProject.pyを実行することで，iocファイルの名前等を変更することができます．
->[!NOTE]
->↑この概要は新しいプロジェクト作成後に削除し，新しくプロジェクトの概要を記述してください．\
 
 | 項目         | 仕様             |
 | ------------ | ---------------- |

@@ -5,3 +5,5 @@ Release
 *.launch
 .vscode/c_cpp_properties.json
 *.cfg
+.pio
+.vscode/launch.json

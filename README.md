@@ -1,11 +1,11 @@
 # sample_InterruptBufferedUART
 ## 概要
 
-| 項目         | 仕様             |
-| ------------ | ---------------- |
-| 使用マイコン | NUCLEO_F446RE    |
-| 使用IDE      | CubeIDE,VSCode   |
-| 使用言語等   | C++,STM32CubeHAL |
+| 項目         | 仕様                      |
+| ------------ | ------------------------- |
+| 使用マイコン | NUCLEO_F446RE             |
+| 使用IDE      | CubeIDE,VSCode,PlatformIO |
+| 使用言語等   | C++,STM32CubeHAL          |
 
 ## ピン設定
 | ピン | 設定        | ラベル      | 備考           |

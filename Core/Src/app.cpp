@@ -20,7 +20,7 @@ extern "C"
     {
         printf("Hello, world!\r\n");
 
-        pc.begin();
+        pc.start();
         setupDone = true;
     }
 

@@ -1,0 +1,15 @@
+BasedOnStyle: Google
+
+IndentWidth: 4
+IndentCaseLabels: true
+
+BreakBeforeBraces: Allman
+
+ColumnLimit: 0
+
+SpacesBeforeTrailingComments: 1
+
+PointerAlignment: Right
+
+SortIncludes: false
+

@@ -7,3 +7,5 @@ Release
 *.cfg
 .pio
 .vscode/launch.json
+.cache
+compile_commands.json

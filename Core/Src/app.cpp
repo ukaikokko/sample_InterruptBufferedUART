@@ -8,8 +8,6 @@
 ukaikokko::InterruptBufferedUART<256, 1024> pc(&huart2);
 ukaikokko::GPOutput led(DebugLED_GPIO_Port, DebugLED_Pin);
 
-static bool setupDone = false;
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -18,10 +16,10 @@ extern "C"
     // MARK:setup
     void user_setup(void)
     {
+        setbuf(stdout, NULL);
         printf("Hello, world!\r\n");
 
         pc.start();
-        setupDone = true;
     }
 
     // MARK:loop
@@ -33,11 +31,13 @@ extern "C"
         if (now - pre >= 10)
         {
             pc.periodic();
+
             while (pc.available())
             {
                 const int16_t data = pc.read();
                 pc.write(static_cast<uint8_t>(data));
             }
+
             pre = now;
         }
     }
@@ -45,16 +45,8 @@ extern "C"
     // MARK:_write
     int _write(int file, char* ptr, int len)
     {
-        if (!setupDone)
-        {
-            HAL_UART_Transmit(&huart2, (uint8_t*)ptr, len, 10); // ブロッキング
-            return len;
-        }
-        else
-        {
-            pc.write((uint8_t*)ptr, len);
-            return len;
-        }
+        pc.write((uint8_t*)ptr, len);
+        return len;
     }
 
     // MARK:UART_RxCpltCallback
